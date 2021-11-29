@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <title>Ejercicio de posicionamiento</title>
+        
+        <style>
+        .d1{
+        position:absolute;
+
+        z-index: 1;  
+        background-image: url(images/reina.jpg);
+    }
+
+    #d1{
+
+    position: relative;
+    top:10px;
+    left: 70px;
+     background-image: url(images/descarga.png);
+
+    z-index: 2;
+    }
+
+    .d2{
+
+    position: relative;
+    left:130px;
+    bottom: 140px;
+    background-image: url(images/captura.jpg);
+    z-index: 3;
+    }
+
+    #d2{
+    position: relative;
+    left: 190px;
+    right: 60px;
+    bottom: 300px;
+    background-image: url(images/diamante.png);
+    z-index: 4;
+}
+
+    .d3{
+    position: relative;
+    left: 250px;
+     background-image: url(images/pica.png);
+    bottom: 450px;
+    z-index: 5;
+}
+div{
+    border: 2px solid black;
+    padding:30px;
+    text-align: center;
+    width: 40px;
+    }
+    body{background-image:url(images/tapete.jpg);
+        background-repeat: repeat-x;}
+      </style>
+   
+    </head>
+    <body>
+    <div class="d1">
+        <p>Soy el primer párrafo</p>
+    </div>
+    <div id="d1">
+        <p>Soy el segundo párrafo</p>
+    </div>
+    <div class="d2">
+        <p>Soy el tercer párrafo</p>
+    </div>
+    <div id="d2">
+        <p>Soy el cuarto párrafo</p>
+    </div>
+    <div class="d3">
+        <p>Soy el quinto párrafo</p>
+    </div>
+
+    </body>
+</html>
